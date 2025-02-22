@@ -1,0 +1,101 @@
+/* Fonts */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+section p:first-of-type {
+  text-indent: 20px;
+}
+
+/* Links */
+a {
+  color: #a66;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #744;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #c77;
+}
+
+a:active {
+  color: #d33;
+  font-weight: bold;
+}
+
+a[href^="http"]::after {
+  content: '\1F517'; /* External link icon */
+  margin-left: 5px;
+}
+
+/* Lists */
+ul, ol {
+  margin: 1.5em 0;
+  padding-left: 20px;
+}
+
+li {
+  line-height: 1.5;
+  list-style-type: square;
+}
+
+/* Navigation */
+nav {
+  background-color: #eee;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  padding: 10px 0;
+}
+
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #a66;
+}
+
+nav a:hover {
+  color: #c77;
+}
